@@ -8,7 +8,7 @@ window.onLoad = function() {
     mapStyle: 'amap://styles/74f36047236b4063ce8b9afaadfe1a33',
     center: [ 121.435159, 31.256971 ],
     zoom: 17,
-    minZoom: 10
+    zooms:[17,20]
   });
   const scene = new Scene({
     id: 'map',
