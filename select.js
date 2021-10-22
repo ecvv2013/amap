@@ -1,3 +1,6 @@
+document.writeln("<script src=\'https://cdn.jsdelivr.net/npm/vue/dist/vue.js\'></script>");
+document.writeln("<link rel=\'stylesheet\' href=\'https://unpkg.com/element-ui/lib/theme-chalk/index.css\'>");
+document.writeln("<script src=\'https://unpkg.com/element-ui/lib/index.js\'></script>");
 document.writeln("<div id=\'a[[This.x]][[This.y]][[This.width]]\' style=\'position:absolute; top:[[This.y]]px; left:[[This.x]]px\'>");
 document.writeln("<template>");
 document.writeln("  <el-select v-model=\'value\' placeholder=\'请选择\' style=\'width:[[This.width]]\'>");
