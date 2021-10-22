@@ -1,46 +1,46 @@
-document.writeln("<script src=\'https://cdn.jsdelivr.net/npm/vue/dist/vue.js\'></script>");
-document.writeln("<link rel=\'stylesheet\' href=\'https://unpkg.com/element-ui/lib/theme-chalk/index.css\'>");
-document.writeln("<script src=\'https://unpkg.com/element-ui/lib/index.js\'></script>");
-document.writeln("<div id=\'a[[This.x]][[This.y]][[This.width]]\' style=\'position:absolute; top:[[This.y]]px; left:[[This.x]]px\'>");
-document.writeln("<template>");
-document.writeln("  <el-select v-model=\'value\' placeholder=\'请选择\' style=\'width:[[This.width]]\'>");
-document.writeln("    <el-option");
-document.writeln("      v-for=\'item in options\'");
-document.writeln("      :key=\'item.value\'");
-document.writeln("      :label=\'item.label\'");
-document.writeln("      :value=\'item.value\'");
-document.writeln("      :disabled=\'item.disabled\'>");
-document.writeln("    </el-option>");
-document.writeln("  </el-select>");
-document.writeln("</template>");
-document.writeln("</div>");
-document.writeln("");
-document.writeln("<script>");
-document.writeln("var Main = {");
-document.writeln("    data() {");
-document.writeln("      return {");
-document.writeln("        options: [{");
-document.writeln("          value: \'选项1\',");
-document.writeln("          label: \'黄金糕\',");
-document.writeln("          disabled: false");
-document.writeln("        }, {");
-document.writeln("          value: \'选项2\',");
-document.writeln("          label: \'双皮奶\',");
-document.writeln("          disabled: true");
-document.writeln("        }, {");
-document.writeln("          value: \'选项3\',");
-document.writeln("          label: \'蚵仔煎\'");
-document.writeln("        }, {");
-document.writeln("          value: \'选项4\',");
-document.writeln("          label: \'龙须面\'");
-document.writeln("        }, {");
-document.writeln("          value: \'选项5\',");
-document.writeln("          label: \'北京烤鸭\'");
-document.writeln("        }],");
-document.writeln("        value: \'\'");
-document.writeln("      }");
-document.writeln("    }");
-document.writeln("  }");
-document.writeln("var Ctor = Vue.extend(Main)");
-document.writeln("new Ctor().$mount(\'#a[[This.x]][[This.y]][[This.width]]\')");
-document.writeln("</script>");
+<script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+<link rel='stylesheet' href='https://unpkg.com/element-ui/lib/theme-chalk/index.css'>
+<script src='https://unpkg.com/element-ui/lib/index.js'></script>
+<div id='a[[This.x]][[This.y]][[This.width]]' style='position:absolute; top:[[This.y]]px; left:[[This.x]]px'>
+<template>
+  <el-select v-model='value' placeholder='请选择' style='width:[[This.width]]'>
+    <el-option
+      v-for='item in options'
+      :key='item.value'
+      :label='item.label'
+      :value='item.value'
+      :disabled='item.disabled'>
+    </el-option>
+  </el-select>
+</template>
+</div>
+
+<script>
+var Main = {
+    data() {
+      return {
+        options: [{
+          value: '选项1',
+          label: '黄金糕',
+          disabled: false
+        }, {
+          value: '选项2',
+          label: '双皮奶',
+          disabled: true
+        }, {
+          value: '选项3',
+          label: '蚵仔煎'
+        }, {
+          value: '选项4',
+          label: '龙须面'
+        }, {
+          value: '选项5',
+          label: '北京烤鸭'
+        }],
+        value: ''
+      }
+    }
+  }
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#a[[This.x]][[This.y]][[This.width]]')
+</script>
